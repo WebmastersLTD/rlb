@@ -12,7 +12,7 @@
 
  - `README.md`: This main README file, providing an overview of the curriculum.
  - `index.html`: The entry point for the web application, showcasing the latest version of the leaderboard SPA.
- - `Episode1/`: Folder containing the first episode of the curriculum.
+ - `Episode1/`: Getting Started - Folder containing the first episode of the curriculum.
    - `README.md`: Introduction and instructions for Episode 1.
    - `index.html`: The initial SPA, representing the basic leaderboard.
  - `Episode2/`: Folder containing the second episode of the curriculum.
@@ -23,36 +23,9 @@
    - `index.html`: The SPA for Episode 3.
  - ... (Continue creating folders for each episode)
 
- ## Getting Started
-
- To get started with the RLB curriculum, follow these steps:
-
- 1. Clone the repository to your local machine using Git:
-
-    ```
-    git clone https://github.com/your-username/redux-leaderboard.git
-    cd redux-leaderboard
-    ```
-
- 2. Navigate to each episode folder to access the README and SPA for that specific part of the curriculum.
-
- 3. Follow the instructions in each episode's README to set up the development environment and view the SPA.
-
  ## Contributions and Feedback
 
  Feedback and contributions to the RLB curriculum are welcome! If you find any issues, have suggestions for improvements, or want to contribute to the project, feel free to open an issue or a pull request.
-
- ## Conclusion
-
- We hope you enjoy your journey through the RLB curriculum and find it valuable in mastering Redux.js while building a feature-rich leaderboard SPA. Happy learning!
-
- ---
-
- You can copy and paste this README template into your root folder README.md on GitHub. As you create each episode folder (Episode1, Episode2, etc.), remember to update the respective episode README.md files with relevant information and instructions for learners.
-
- If you need any further assistance or have more questions, please let me know. Good luck with your Redux Leaderboard curriculum, and happy teaching!
-
- Thank you for the clarification! The structure you suggested, with each part referred to as an "episode" and the initial basic leaderboard as "Season One" and the improved version as "Season Two," is well-organized and engaging. Let's continue with this format for the curriculum:
 
  **Curriculum Structure - Redux Leaderboard (RLB)**:
 
@@ -120,12 +93,8 @@
    - Implement techniques like memoization, lazy loading, or code splitting to improve performance.
    - Showcase the optimized and performant leaderboard SPA as "Season Two, Episode 12: Redux Leaderboard (RLB) v2 - Performance Optimized."
 
- **Conclusion**:
- - Provide a final version of the SPA that encompasses all the concepts covered in the entire curriculum.
- - Encourage learners to compare the initial SPA from Season One with the final version from Season Two to see how far they've come.
 
- Each episode builds on the concepts covered in the previous ones, creating a coherent and progressive learning journey for learners. The format allows learners to see the evolution of the Redux Leaderboard project as they progress through the curriculum, making it a rewarding and engaging learning experience.
 
- As you develop the curriculum, ensure clear explanations, code examples, and practical exercises are included in each episode. Regularly update the README.md file in the repository to guide learners on how to access and view each "episode" of the leaderboard SPA.
+ ## Conclusion
 
- Best of luck with your Redux Leaderboard curriculum, and if you have any further questions or need assistance during the course development, feel free to ask! Happy teaching!
+ We hope you enjoy your journey through the RLB curriculum and find it valuable in mastering Redux.js while building a feature-rich leaderboard SPA. Happy learning!
