@@ -27,9 +27,15 @@ Before you set off on this epic journey, ensure you have the following enchanted
 
 To unlock the mystical secrets of the repository, chant this spell and clone it to your local machine:
 
+run
+
 ```
 git clone https://github.com/WebmastersLTD/rlb.git
 ```
+
+in your terminal
+
+This will create a copy of the project on your computer.
 
 ## Episode Structure 📚
 
