@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "name": "rlb",
+  "description": "Welcome to the Redux Leaderboard (RLB) curriculum! This project aims to provide a progressive learning journey for mastering Redux.js while building a leaderboard single-page application (SPA).",
+  "version": "0.0.1",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "seandinwiddie",
+  "license": "MIT"
+}
