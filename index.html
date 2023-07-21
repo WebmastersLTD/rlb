@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redux Leaderboard (RLB) Curriculum</title>
+  <meta property="og:title" content="Redux Leaderboard (RLB) Curriculum">
+  <meta name="description" content="">
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/react-native-for-web-stylesheet@0.0.5/base.css">
+  <style>
+    html {
+      background: #1a1a1a;
+    }
+    body {
+      font-family: 'Merriweather', serif;
+      color: #fff;
+      margin: 0;
+    }
+    /* Add the code preview styles and override font-family */
+    pre {
+      font-family: 'Space Mono', monospace !important;
+      padding: 10px;
+      border-radius: 4px;
+      background-color: #2b2b2b; /* Added custom style to change the background color of code blocks */
+      color: #fff; /* Added custom style to make the code text white */
+      overflow-x: auto; /* Added custom style to enable horizontal scrolling for code blocks */
+    }
+    code {
+      font-family: 'Space Mono', monospace !important;
+      padding: 2px 4px;
+      border-radius: 4px;
+      background-color: #2b2b2b; /* Added custom style to change the background color of inline code */
+      color: #fff; /* Added custom style to make the inline code text white */
+    }
+    .fa-github {
+      color: #007bff;
+      font-size: 24px;
+      margin-right: 5px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Custom Styles for Classes */
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .text-4xl {
+      font-size: 2.5rem;
+    }
+
+    .text-2xl {
+      font-size: 1.75rem;
+    }
+
+    .font-bold {
+      font-weight: bold;
+    }
+
+    .text-lg {
+      font-size: 1.125rem;
+    }
+
+    .text-blue-500 {
+      color: #007bff;
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+
+    .p-4 {
+      padding: 1rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-javascript.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container mx-auto p-4">
+    <div class="mb-4">
+      <h1 class="text-4xl font-bold text-center">Redux Leaderboard (RLB) Curriculum</h1>
+      <p class="text-lg">Welcome to the Redux Leaderboard (RLB) curriculum! This project aims to provide a progressive learning journey for mastering Redux.js while building a leaderboard single-page application (SPA).</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto p-4">
+    <div class="mb-4">
+      <h2 class="text-2xl font-bold">Get Started now with Episode 1</h2>
+      <p class="text-lg">To get started, follow the instructions in <a href="./Episode1/README.md" class="text-blue-500">Episode 1</a> to clone the repository and begin your learning journey!</p>
+    </div>
+  </div>
+  <div class="container mx-auto p-4">
+    <div class="mb-4">
+      <h2 class="text-2xl font-bold">Style Guide</h2>
+      <ul>
+        <li>Indentation: Use 2 spaces for indentation.</li>
+        <li>Variables: Use `const` for variables that do not change and `let` for variables that do change.</li>
+        <li>Line Length: Limit lines to 80 characters maximum.</li>
+        <li>Quoting Strings: Use single quotes for strings unless escaping is necessary.</li>
+        <li>Function Declarations: Prefer function expressions over function declarations, and use arrow functions for anonymous functions.</li>
+        <li>Spacing: Use spaces around operators and after commas, and avoid trailing whitespace.</li>
+        <li>Comments: Write descriptive comments for complex code to explain the intent and logic.</li>
+        <li>Object and Array Creation: Use object literals `{}` and array literals `[]` instead of constructors (`new Object()` or `new Array()`).</li>
+        <li>ES6 Features: Utilize ES6 features like template literals, destructuring, and spread/rest operators when appropriate.</li>
+        <li>Imports and Exports: Use named exports and imports for better readability and maintainability.</li>
+        <li>Null and Undefined: Avoid explicit comparisons to `null` and `undefined` by using truthy/falsy checks (`if (variable)` or `if (!variable)`).</li>
+        <li>Implicit Type Coercion: Avoid implicit type coercion and use explicit comparisons (`===` or `!==`).</li>
+        <li>Promises and Async/Await: Prefer `async/await` over plain promises for better readability.</li>
+        <li>Error Handling: Always handle errors properly, and avoid swallowing exceptions.</li>
+      </ul>
+      <pre>
+        <code class="language-javascript">
+const initialState = {
+  users: [],
+  loading: false,
+  error: null,
+};
+
+function leaderboardReducer(state = initialState, action) {
+  switch (action.type) {
+    case 'FETCH_USERS_REQUEST':
+      return {
+        ...state,
+        loading: true,
+        error: null,
+      };
+    case 'FETCH_USERS_SUCCESS':
+      return {
+        ...state,
+        users: action.payload,
+        loading: false,
+      };
+    case 'FETCH_USERS_FAILURE':
+      return {
+        ...state,
+        loading: false,
+        error: action.payload,
+      };
+    default:
+      return state;
+  }
+}
+        </code>
+      </pre>
+      <p class="text-lg">TODO: Add desired Prism.js plugin settings for the code preview (draw_white_space all, rulers 80, show_line_endings true, tab_size 2, line_numbers, ayu like theme w/ some elements of syntax in italic)</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto p-4">
+    <div class="mb-4">
+      <p class="text-lg">The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" class="text-blue-500">MIT</a>.</p>
+      <a href="https://github.com/WebmastersLTD/rlb" target="_blank" rel="noopener">
+        <i class="fab fa-github" aria-label="GitHub Repository"></i>
+        View on GitHub
+      </a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/react-native-for-web@0.17.0/index.umd.min.js"></script>
+</body>
+</html>
