@@ -1,6 +1,3 @@
-Certainly! Here's an initial version of the `ep3/readme.md` file for Episode 3 of the Redux Leaderboard (RLB) Curriculum:
-
-```markdown
 # 🚀 Redux Leaderboard (RLB) Curriculum - Ep3 🎉
 
 Welcome to Episode 3 of the *Redux Leaderboard (RLB) Curriculum*! 🎉 In this thrilling episode, we'll produce a Hello World Redux.js Single-Page Application (SPA). Get ready to harness the power of Redux and create your first interactive SPA with ease! 🚀
