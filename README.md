@@ -98,3 +98,25 @@
  ## Conclusion
 
  We hope you enjoy your journey through the RLB curriculum and find it valuable in mastering Redux.js while building a feature-rich leaderboard SPA. Happy learning!
+
+ ## todo
+
+1. **Update Episode 1 (ep1/index.html)**:
+   - The current content displays an initial basic leaderboard table concept. Since the primary purpose of Episode 1 is to introduce the project and provide instructions for cloning the repository, the leaderboard table concept seems out of place. It would be better to remove the leaderboard table from this file and focus on the introductory content.
+   - The link to the "Next step" (Episode 2) should be removed from Episode 1 since it's not part of the intended flow. We can include this link in Episode 2 instead.
+   - The link to `./README.md` should be fixed to point to the correct `rlb/ep1/README.md` file.
+
+2. **Update Episode 2 (ep2/index.html)**:
+   - Episode 2 should provide instructions for setting up the repository locally with npm and TypeScript, but it should not include the leaderboard table concept yet.
+   - The link to the "Next step" (Episode 3) should be removed from Episode 2 since it's not part of the intended flow. We can include this link in Episode 3 instead.
+   - The link to `./README.md` should be fixed to point to the correct `rlb/ep2/README.md` file.
+
+3. **Create Episode 3 (ep3/index.html)**:
+   - We should create a new Episode 3 file (`rlb/ep3/index.html`) that will contain the instructions for producing a Hello World Redux.js SPA.
+   - In Episode 3, we can include the initial basic leaderboard table concept, as it seems relevant to this episode.
+
+4. **Other Updates**:
+   - The main `index.html` file in the root directory (`rlb/index.html`) seems to be the landing page for the entire curriculum. We can update it to provide an overview of the curriculum structure and link to the individual episodes.
+
+5. **Remove "npm start" from Episode 2**:
+   - We should not run `npm start` until Episode 3, where the Hello World Redux.js SPA is created.

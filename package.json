@@ -4,12 +4,20 @@
   },
   "name": "rlb",
   "description": "Welcome to the Redux Leaderboard (RLB) curriculum! This project aims to provide a progressive learning journey for mastering Redux.js while building a leaderboard single-page application (SPA).",
-  "version": "0.0.1",
-  "main": "index.js",
-  "devDependencies": {},
+  "version": "0.1.0",
+  "main": "index.ts",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
   "scripts": {
+    "start": "ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "seandinwiddie",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WebmastersLTD/rlb.git"
+  }
 }

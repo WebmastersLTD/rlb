@@ -19,7 +19,10 @@ Before you set off on this epic journey, ensure you have the following enchanted
 
 Follow these magical steps to embark on your exhilarating quest:
 
-Install TypeScript by running npm install typescript in your terminal.
+...
+Install TypeScript by running npm install typescript in your terminal
+have ts-node installed as a dev dependency (npm install ts-node --save-dev)
+...
 
 **Summon the Dependencies**: In your command center (terminal or command prompt), stand tall at the root directory of the repository and invoke the ancient incantation:
 
